@@ -1,4 +1,4 @@
-from IOSXE_restconf import restconfxe
+from restconfxe import IosXe_RestConf as restconf
 
 
 # CREATE A DICTIONARY THAT SPECIFIES HOST, CREDENTIALS AND PORT
@@ -10,7 +10,7 @@ config = {
 }
 
 # INITIALIZE IOSXE_RESTONCONF OBJECT AS ROUTER
-router = restconfxe.IosXe_RestConf(config)
+router = restconf(config)
 
 # Three custom methods are provided in restconfxe.py
 # as examples for how to programmatically interact with
